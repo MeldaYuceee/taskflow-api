@@ -18,3 +18,11 @@ Projeyi yerel ortamınızda çalıştırmak için adımları takip edin:
 1. Bağımlılıkları yükleyin:
 ```bash
 npm install
+
+Sunucuyu başlatın:Bashnode server.js
+Varsayılan olarak API http://localhost:3000 portunda ayağa kalkacaktır.API Uç Noktaları (Endpoints)HTTP MetoduEndpointAçıklamaGET/tasksSistemde kayıtlı bütün görevleri listelerGET/tasks/:idID bilgisi verilen spesifik görevin detayını dönerPOST/tasksYeni bir görev oluştururPUT/tasks/:idBelirtilen görevin bilgilerini (durum, başlık vb.) güncellerDELETE/tasks/:idBelirtilen görevi sistemden kalıcı olarak silerÖrnek İstek Gövdesi (POST /tasks)JSON{
+  "title": "Veritabanı Tasarımı",
+  "description": "Tablolar ilişkilendirilecek",
+  "priority": "yuksek",
+  "assignee": "Musa"
+}
